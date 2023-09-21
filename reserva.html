@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Reserva de Viagem</title>
+</head>
+<body>
+     <h1>Formulário de Reserva de Viagem:</h1>
+    <section>
+        <form>
+
+            <fieldset>
+                <legend>Dados do Usuário:</legend>
+
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome"><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+    
+            </fieldset>
+        
+            <fieldset>
+
+                <legend>Serviços Desejados:</legend>
+
+                <input type="checkbox" id="passagens" name="servico" value="passagens">
+                <label for="passagens">Compra de passagens</label><br>
+                
+                <input type="checkbox" id="hospedagem" name="servico" value="Hospedagem">
+                <label for="hospedagem">Reserva de hospedagem</label><br>
+
+                <input type="checkbox" id="veiculos" name="servico" value="Veiculos">
+                <label for="veiculos">Aluguel de veículos</label><br>
+             
+            </fieldset>
+        
+            <fieldset>
+
+                <legend>Forma de Pagamento:</legend>
+                
+                    <input type="radio" id="cartao" name="pagamento" value="cartao">
+                    <label for="cartao">Cartão de Crédito</label><br>
+                
+                    <input type="radio" id="boleto" name="pagamento" value="boleto">
+                    <label for="boleto">Boleto Bancário</label><br>
+
+                    <input type="radio" id="pix" name="pagamento" value="pix">
+                    <label for="pix">Pix</label><br>
+                    
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Prazo de Pagamento:</legend>
+                <select id="prazo" name="prazo">
+                    <option value="vista">À vista</option>
+                    <option value="cinco">Cinco Vezes Sem Juros</option>
+                    <option value="dez">Dez Vezes Com Juros</option>
+                </select>
+                
+            </fieldset>
+            <label>Comentário:</label><br>
+            <textarea name="Comentario" rows="5" placeholder="Digite sua mensagem" required></textarea><br><br>
+
+            <button type="submit">submit</button>
+            
+        </form>
+    </section>
+    
+</body>
+</html>
